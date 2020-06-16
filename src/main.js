@@ -6,6 +6,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import router from './router/index'
+import vuetify from './plugins/vuetify';
 Vue.use(VueAxios, axios)
 require('./assets/styles/main.css');
 
@@ -15,6 +16,8 @@ Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 
 new Vue({
-  render: h => h(App),router
+  render: h => h(App),
+  vuetify,
+  router
 }).$mount('#app')
 // Install BootstrapVue

@@ -1,10 +1,16 @@
 import Api from '@/services/Api'
 
-export default {
-  getOcs (params) {
+
+class OcsService {
+
+  // méthode pour récuperer les programmes par title
+  static getProgrammes(params) {
     return Api().get('apps/v2/contents?search=title%3D' + params.title)
-  },
-  getOcsDetails (params) {
-    return Api().get( params.url)
+  }
+
+  // méthode pour récuperer  détail d'un programme spécifiqueF
+  static getProgrammeDetail(params) {
+    return Api().get(params.url)
   }
 }
+export default OcsService;
