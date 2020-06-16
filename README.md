@@ -1,8 +1,9 @@
 # ocstest
 
 ## Site web for this Test
-See [Configuration Reference](https://orangetest-50ea6.web.app/).
-
+```
+https://orangetest-50ea6.web.app/
+```
 
 ## Project setup
 ```
